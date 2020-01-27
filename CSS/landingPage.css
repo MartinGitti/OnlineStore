@@ -1,0 +1,113 @@
+/*======================================TASK 15=========================================== */
+/* CSS styling Sheet. */
+
+/* Styling for entire page. */
+body {
+    background-image: url(../Images/Veggies.jpg);
+    border: 5px solid rgb(170, 224, 44);
+    text-align: center;
+    opacity: 1;
+}
+
+/* Page headings: */
+h1, h2 {
+	font-family: courier;
+}
+h1 {
+    font-size: 100px;
+}
+h2 {
+	font-size: 70px;
+}
+
+/* "P" element. */
+p {
+    color: black;
+    font-size: 40px;
+}
+
+/* Navbar. */
+.navBar {
+    background-color: black;
+    font-size: 45px;
+    height: 85%;
+    margin: 35% 0% 10% 0%;
+    opacity: 0.7;
+    padding: 80px 20px 0px 20px;
+    position: absolute;
+    width: 16.5%;	
+}
+
+/* Navbar styling with class attribute. */
+.navBar li a {
+    color: darkorange;
+    opacity: 1;
+    padding: 5px 10px 10px 10px;
+    text-decoration: none;
+}
+
+/* Navbar hover effect. */
+.navBar li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Padding for unordered list.*/	
+ul li {
+    padding: 30px;
+}
+
+/* "About Us" heading with class attribute. */
+.aboutUs {
+	background-color: lightgrey;
+	color: darkorange;
+	font-size: 100px;
+	margin: 10% 350px 350px 350px;
+	opacity: 0.8;
+	padding-top: 20px;
+}
+
+/* Text block with class attribute. */
+.textBlock {
+	background-color: lightgrey;
+	color: black;
+	display: inline-grid;
+    font-family: ariel;
+    font-size: 40px;
+    font-style: italic;
+    opacity: 0.8;
+	text-align: justify;
+	width: 50%;
+ }
+
+ /* External link: "click here". */
+ .externalLink {
+     color: darkorange;
+ }
+
+/* External link: "click here", hover styling. */
+.externalLink:hover {
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    text-decoration-style: dotted;
+}
+
+/* Div with class attribute for animation. */
+.colorChange {
+    background: olivedrab;
+    height: 100%;
+    opacity: 0.8;
+    padding: 10px;
+    width: 100%;
+    /* CSS animation. */
+    animation: mymove 7s infinite;
+    }
+    @keyframes mymove {
+        50% {background-color: rgb(231, 235, 20);}
+    } 
+    .contrast {
+        filter: contrast(150%);
+
+    }
+/*======================================THE END=========================================== */

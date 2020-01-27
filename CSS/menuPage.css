@@ -1,0 +1,91 @@
+/*=================================TASK 15==============================================*/
+/* Css Styling Sheet. */
+
+/* Home icon helps user to navigate to other pages, reveal links by clicking on Icon. */
+#homeIcon {
+    background-image: url(../Images/homePage.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 120px;
+ }
+
+ /* Page links. */
+ .navbarList, .navbarLink {
+     color:  rgb(155, 179, 48);
+     font-size: x-large;
+     font-weight: bold;
+     list-style: none;
+     padding: 10px;
+ }
+
+ /* Page link change color when hovered over. */
+ .navbarLink:hover {
+     color: green;
+     font-size: larger;
+     text-decoration: overline;
+ }
+
+ /* List Page links horizontally under home Icon. */
+ ul#horizontalList li {
+     display: inline;
+ }
+
+ /* Styling for entire page. */
+body {
+    background-image: url(../Images/menuPageBackground.jpg);
+    border: 2px solid green;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Table styling with html class attribute. */
+#tableHead {
+    color: green;
+    border-bottom: 2px solid green;
+	font-size: 100px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Table headings styled with html class attribute. */
+.tableHeader {
+    background-image: url(../Images/menuTable.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid green;
+	background-repeat: no-repeat;
+	color: Black;
+	filter: contrast(150%);
+	font-family: ariel;
+	font-size: 50px;
+    height: fit-content;
+    text-align: center;
+	width: 30%;
+}
+
+/* Table data styling with class attribute. */
+.tableData {
+    color:black;
+    border: 2px solid green;
+    font-family: verdana;
+	font-size: 20px;
+	padding: 20px;
+	text-align: justify;
+}
+
+/* Class style for links on "Menu" Page. */
+.linkColor {
+	color:green;
+}
+
+button {
+    background-color: rgb(46, 150, 46);
+}
+
+/* Css enlarge animation fo Images of 3rd column with class attribute. */
+.zoom:hover {
+	transform: scale(1.5);
+}
+
+/*=================================THE END==============================================*/

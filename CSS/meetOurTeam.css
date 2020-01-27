@@ -1,0 +1,74 @@
+/*==========================================CAPSTONE PROJECT(II)======================================*/
+
+/* Css Styling sheet.*/
+
+/* Styling for page body.*/
+body {
+    background-image: url(../Images/Theme2.jpg);
+    padding: 20px;
+}
+
+/* Home icon helps user to navigate to other pages, reveal links by clicking on Icon. */
+#homeIcon {
+    background-image: url(../Images/homePage.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 120px;
+ }
+
+ /* Page links. */
+ .navbarList, .navbarLink {
+     color:  rgb(155, 179, 48);
+     font-size: x-large;
+     font-weight: bold;
+     list-style: none;
+     padding: 10px;
+     text-decoration: none;
+ }
+ 
+ /* Page link change color when hovered over. */
+ .navbarLink:hover {
+     color: green;
+     text-decoration: overline;
+ }
+
+ /* List Page links horizontally under home Icon. */
+ ul#horizontalList li {
+     display: inline;
+ }
+
+ /* Page heading. */
+ #tableHead {
+     font-weight: bold;
+     text-align: center;
+     text-decoration: underline;
+ }
+
+ /* Styling for all images. */
+img {
+    border: 2px solid black;
+    filter: contrast(110%);
+    height: 400px;
+    padding: 20px;
+    width: 300px;
+}
+
+/* Styling for table headers. */
+.names {
+    font-size: 40px;
+}
+
+/* Class styling for "p" element on "Meet Our Team" web page:*/
+.ourTeam {
+	font-size: 30px;
+    padding-top: 100px;	
+    text-align: justify;
+}
+
+/* Input button type with id to excecute jQuery code. */
+#animate {
+    background-color: goldenrod;
+    border-radius: 10%;
+    font-weight: bold;
+}
+/*=============================================THE END================================================*/

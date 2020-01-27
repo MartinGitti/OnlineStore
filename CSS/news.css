@@ -1,0 +1,70 @@
+/*================================CAPSTONE PROJECT(II)==================================*/
+/* Styling for web page. */
+
+/* Home icon helps user to navigate to other pages, reveal links by clicking on Icon. */
+#homeIcon {
+    background-image: url(../Images/homePage.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 120px;
+    margin-left: 20px;
+    margin-top: 20px;
+ }
+
+ /* Page links. */
+ .navbarList, .navbarLink {
+     color:  rgb(155, 179, 48);
+     font-size: x-large;
+     font-weight: bold;
+     list-style: none;
+     padding: 10px;
+     text-decoration: none;
+ }
+
+ /* Page link change color when hovered over. */
+ .navbarLink:hover {
+     color: green;
+     font-size: larger;
+     text-decoration: overline;
+ }
+
+ /* List Page links horizontally under home Icon. */
+ ul#horizontalList li {
+     display: inline;
+ }
+
+ body {
+    background-image: url(../Images/shoppingCart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:black 2px solid;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for page icon. */
+#pageIcon {
+    background-image: url(../Images/news.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    height: 150px;
+    margin: 0 auto;
+    width: 150px;
+}
+/* Styling for page heading. */
+h1 {
+    font-size: 80px;
+    text-decoration: underline;
+}
+/* Styling for "p" element. */
+p {
+    font-size: 25px;
+    padding: 20px
+}
+/* highlight text background color when hovered over. */
+.change:hover {
+    background-color: rgb(106, 231, 48);
+}
+
+/*=======================================THE END=========================================*/

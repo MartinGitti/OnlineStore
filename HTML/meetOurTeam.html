@@ -1,0 +1,126 @@
+<!-- ======================================CAPSTONE PROJOCT(II)=========================================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Meet Our Team</title>
+	<!--All relevant links added. -->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/meetOurTeam.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- Links in navbar to specified pages. -->
+	<div class="navbar" id="homeIcon" title="Home Page Icon">
+		<nav>
+			<ul id="horizontalList">
+				<li class="navbarList">
+					<a class="navbarLink" href="../index.html" id="homeLink"><em>HOME PAGE</em></a>
+				</li>
+				<li class="navbarList">
+					<a class="navbarLink" href="../HTML/menuPage.html" id="menuLink"><em>MENU PAGE</em></a>
+				</li>
+				<li class="navbarList">
+					<a class="navbarLink" href="../HTML/meetOurTeam.html" id="teamLink"><em>MEET OUR TEAM</em></a>
+				</li>
+				<li class="navbarList">
+					<a class="navbarLink" href="../HTML/news.html" id="newsLink"><em>NEWS PAGE</em></a>
+				</li>
+				<li class="navbarList">
+					<a class="navbarLink" href="../HTML/contactUs.html" id="contactLink"><em>CONTACT US</em></a>
+				</li>
+				<li class="navbarList">
+					<a class="navbarLink" href="../HTML/shoppingCart.html" id="cartLink"><em>SHOPPING CART</em></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<input type="button" id="animate" value="Animate Staff Motto's">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th colspan="2" id="tableHead"> Meet Our Team </th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row" class="names">Rihanna Becka:<img src="../Images/Team1.jpg" alt="Rihanna Cook"
+						class="img-fluid, teamMember"></th>
+				<td>
+					<p class="ourTeam">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<br />
+					<b class="motto">My personal motto in life:<q>There is no sincere love than the love of food.</q></b>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" class="names">Naheem Richie:<img src="../Images/Team2.jpg" alt="Naheem Cook"
+						class="img-fluid"></th>
+				<td>
+					<p class="ourTeam">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<br />
+					<b class="motto">My personal motto in life:<q>Good food= Good mood.</q></b>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" class="names">Henry Williams:<img src="../Images/Team3.jpg" alt="Henry Cook"
+						class="img-fluid"></th>
+				<td>
+					<p class="ourTeam">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<br />
+					<b class="motto">My personal motto in life:<q>A recipe has no soul. You, the cook, need to bring soul to the
+							recipe.</q></b>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" class="names">Sarah Goth:<img src="../Images/Team4.jpg" alt="Sarah Cook"
+						class="img-fluid"></th>
+				<td>
+					<p class="ourTeam">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<br />
+					<b class="motto">My personal motto in life:<q>Food is not just eating energie, it's an experience.</q></b>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+	<script src="../Javascript/meetOurTeam.js"></script>
+	<script>
+		/* jQuery */
+		/* Function to hide page links until user clicks on Home Icon(div).*/
+		$(document).ready(function () {
+
+			$(".navbarList").hide();
+		});
+
+		$(".navbar").click(function () {
+			$(".navbarList").slideToggle("slow");
+		});
+	</script>
+	
+</body>
+
+</html>
+<!-- ======================================THE END=========================================== -->

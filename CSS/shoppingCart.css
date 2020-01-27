@@ -1,0 +1,110 @@
+/*================================================CAPSTONE PROJECT(II)==================================== */
+
+/* Css Styling Sheet */
+
+/* Cartoon cart image. */
+#cartoonCart {
+    margin-left: 550px;
+    margin-top: 130px;
+    position: absolute;
+    width: 400px;
+}
+
+/* Home icon helps user to navigate to other pages, reveal links by clicking on Icon. */
+#homeIcon {
+    background-image: url(../Images/homePage.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 120px;
+    margin-top: 15px;
+    margin-left: 15px;
+ }
+
+ /* Page links. */
+ .navbarList, .navbarLink {
+     color:  rgb(155, 179, 48);
+     font-size: x-large;
+     font-weight: bold;
+     list-style: none;
+     padding: 10px;
+     text-decoration: none;
+ }
+
+ /* Page link change color when hovered over. */
+ .navbarLink:hover {
+     color: green;
+ }
+
+ /* List Page links horizontally under home Icon. */
+ ul#horizontalList li {
+     display: inline;
+ }
+
+ /* "click here" text between emphasize element in html.*/
+ em {
+     text-decoration: underline;
+ }
+
+ /* "click here" text in html changes color when hovered over. */
+ em:hover {
+     color: green;
+     font-size: larger;
+     text-decoration: overline;
+ }
+
+/* Page styling */
+body {
+    background-image: url(../Images/shoppingCart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    font-family: courier;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Page heading. */
+h1 {
+    color: rgb(155, 179, 48);;
+    font-size: 100px;
+}
+
+/* Styling to all buttons. */
+button {
+    background-color: rgb(155, 179, 48);
+    color: black;
+    padding: 10px;
+}
+
+/* Styling to menu list with class attribute. */
+.add-to-cart {
+    color:black;
+    text-decoration: none;
+}
+
+/* Hover effects to menu list with class attribute. */
+.add-to-cart:hover {
+    color: green;
+    font-size: 50px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* List dots are placed next to text. */
+li {
+    list-style-position: inside;
+}
+
+/* Div & span element with class attribute.*/
+.display {
+    color:rgb(247, 8, 8);
+}
+
+/* Confirm order input button. */
+#confrim {
+    padding: 20px;
+}
+
+/*======================================================THE END============================================= */
+

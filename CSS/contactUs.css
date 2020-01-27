@@ -1,0 +1,77 @@
+/*===================================CAPSTONE PROJECT====================================*/
+
+/* Css Styling Sheet */
+
+/* Home icon helps user to navigate to other pages, reveal links by clicking on Icon. */
+#homeIcon {
+    background-image: url(../Images/homePage.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 120px;
+ }
+
+ /* Page links. */
+ .navbarList, .navbarLink {
+     color:  rgb(155, 179, 48);
+     font-size: x-large;
+     font-weight: bold;
+     list-style: none;
+     padding: 10px;
+     text-decoration: none;
+ }
+
+ /* Page link change color when hovered over. */
+ .navbarLink:hover {
+     color: green;
+     text-decoration: overline;
+ }
+
+ /* List Page links horizontally under home Icon. */
+ ul#horizontalList li {
+     display: inline;
+ }
+
+ /* Cellphone pic styling with id attribute. */
+#cellphone {
+    float: inherit;
+    height: 10%;
+    width: 10%;
+}
+
+ /* Page styling. */
+body {
+    background-image: url(../Images/Theme1.jpg);
+    background-repeat: no-repeat;
+    font-size: 30px;
+    padding: 10px 250px 10px 200px ;
+    text-align: center;
+}
+
+p {
+    padding: 50px;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    color: green;
+    font-weight: bold;
+}
+
+small {
+    color: red;
+    font-size: 20px;
+}
+
+button {
+    background-color: greenyellow;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#contactInfo {
+    color: black;
+    display: inline;
+    text-align: center;
+}
+
+/*========================================THE END========================================*/

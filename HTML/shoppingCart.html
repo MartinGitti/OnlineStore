@@ -1,0 +1,235 @@
+<!--============================================CAPSTONE PROJECT(II)========================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shopping Cart Page</title>
+  <link rel="stylesheet" href="../CSS/shoppingCart.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <script src="../Javascript/shoppingCart.js"></script>
+</head>
+
+<body>
+  <img src="../Images/cart.png" alt="Cartoon Shopping Cart" id="cartoonCart"
+    title=" Click once, click twice fast enough and discover our little secret... ">
+  <div class="navbar" id="homeIcon" title="Home Page Icon">
+    <nav>
+      <ul id="horizontalList">
+        <!-- Link to home page. -->
+        <li class="navbarList">
+          <a class="navbarLink" href="../index.html" id="homeLink"><em>HOME PAGE</em></a>
+        </li>
+        <li class="navbarList">
+          <a class="navbarLink" href="../HTML/menuPage.html" id="menuLink"><em>MENU PAGE</em></a>
+        </li>
+        <li class="navbarList">
+          <a class="navbarLink" href="../HTML/meetOurTeam.html" id="teamLink"><em>MEET OUR TEAM</em></a>
+        </li>
+        <li class="navbarList">
+          <a class="navbarLink" href="../HTML/news.html" id="newsLink"><em>NEWS PAGE</em></a>
+        </li>
+        <li class="navbarList">
+          <a class="navbarLink" href="../HTML/contactUs.html" id="contactLink"><em>CONTACT US</em></a>
+        </li>
+        <li class="navbarList">
+          <a class="navbarLink" href="../HTML/shoppingCart.html" id="cartLink"><em>SHOPPING CART</em></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <h1>Shopping Cart</h1>
+  <div class="intructions">
+    <p>You can add a meal to your order by clicking on the meal you want in the list below. </p>
+    <p>You can change the quantity of your order in the text box provided when you add a meal to your shopping cart.
+    </p>
+    <p>You can "add to" or "remove" any of the meals from your shopping cart, using the buttons provided.</p>
+  </div>
+  <!-- All menu items listed below in div. -->
+  <div class="accordion">
+    <p><em>Click Here</em> to hide menu meals:</p>
+    <ul class="panel">
+      <li><a class="add-to-cart" href="#" data-name="Chick-Pea Falafel" data-price="70">Chick-Pea Falafel R70</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Warm Veg Bowl" data-price="75">Warm Veg Bowl R75</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Veg Stir Fry" data-price="65">Veg Stir Fry R65</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Spinach Lesangne" data-price="80">Spinach Lesangne R80</a></li>
+      <li><a class="add-to-cart" href="#" data-name="Thai Bean Curry" data-price="90">Thai Bean Curry R90</a></li>
+    </ul>
+  </div>
+  <div class="button">
+    <button id="clear-cart">Clear Cart</button>
+  </div>
+  <div class="list-cart-items">
+    <ul id="show-cart">
+      <li>
+        <!-- Cart Items are listed here -->
+      </li>
+    </ul>
+  </div>
+  <div class="display">
+    You have <span id="count-cart" class="display"></span> item/s in your cart.
+    Total cart including vat amounts to: R <span id="total-cart">X</span>
+  </div>
+    <form>
+      <div class="promo">
+        <label for="promo-code">Enter promotional code:</label>
+        <input id="promo-code" type="text" class="promoCode" maxlength="12">
+        <input type="button" class="promo-submit" value="Submit">
+      </div>
+      <div class="order-option">
+        <p>How would you like to receive your order?</p>
+        <p> Collection: <input type="checkbox"> or Delivery: <input type="checkbox"></p>
+      </div>
+      <div class="select">
+        <select id="select" name="Delivery Options:">
+          <option value="#" selected="selected"> Select Delivery Option: </option>
+          <option id="collectJHB" value="collection">Collect from Branch (JHB) </option>
+          <option id="deliverPickup" value="delivery">Delivery to pickup point.</option>
+          <option value="deliverHome">Delivery to home address.</option>
+        </select>
+      </div>
+      <div class="address">
+        <p>
+          If you chose delivery at home address, please specify the address:
+          <input type="text" value=" Enter address here...">
+        </p>
+      </div>
+    </form>
+    <form name="reference">
+      <input id="confirm" type="button" value="Confirm Order" onClick="randomString();">
+      <input type="text" name="randomfield" value="">
+    </form>
+    <script>
+      // Internal jQuery coding below:
+      // Function to alert upon loaded page.
+      $(document).ready(function () {
+        alert("The Web Page has fully loaded, please click on the home icon to navigate to other pages. Click okay to continue!");
+      });
+
+      // Double click function to excecute the following. 
+      $(document).on("dblclick", function () {
+        let answer = prompt("On what network can you find Ed, Edd and Eddy?");
+
+        if (answer === "Cartoon Network") {
+          alert("Congratulations!!! You double clicked and earned double for your trouble. Use the following promotional code in the promotional box below: " + promoCode + " You also get move the cartoon cart around using the arrow keys.");
+        } else if (answer != "Cartoon Network" || answer == null) {
+          alert("Sorry, that is not quite right, search the net and try again later...");
+        }
+      });
+
+      /* Animate cartoon cart icon with arrow keys. */
+      $(document).keydown(function (key) {
+        switch (parseInt(key.which, 10)) {
+          // Left
+          case 37:
+            $('img').animate({ left: "-=20px" }, 'fast');
+            break;
+          // Up 
+          case 38:
+            $('img').animate({ top: '-=20px' }, 'fast');
+            break;
+          // Right 
+          case 39:
+            $('img').animate({ left: '+=20px' }, 'fast');
+            break;
+          // Down 
+          case 40:
+            $('img').animate({ top: '+=20px' }, 'fast');
+            break;
+        }
+      });
+
+      /* Upon click of item, add particular item to the cart. */
+      $(".add-to-cart").click(function (event) {
+        alert("Your order has been added to your shopping cart. Please click okay to continue!");
+        event.preventDefault();
+        let name = $(this).attr("data-name");
+        let price = Number($(this).attr("data-price"));
+        shoppingCart.addItemToCart(name, price, 1);
+        displayCart();
+      });
+
+      /* Clear entire cart of items when button is clicked. */
+      $("#clear-cart").click(function (event) {
+        alert("Your shopping cart has been is cleared");
+        shoppingCart.clearCart();
+        displayCart();
+      });
+
+      /* Remove item from cart. */
+      $("#show-cart").on("click", ".delete-item", function (event) {
+        let name = $(this).attr("data-name");
+        shoppingCart.removeItemFromCartAll(name);
+        displayCart();
+      });
+
+      /* Subtract the same item from cart. */
+      $("#show-cart").on("click", ".subtract-item", function (event) {
+        let name = $(this).attr("data-name");
+        shoppingCart.removeItemFromCart(name);
+        displayCart();
+      });
+
+      /* Add the same item to the cart. */
+      $("#show-cart").on("click", ".plus-item", function (event) {
+        let name = $(this).attr("data-name");
+        shoppingCart.addItemToCart(name, 0, 1);
+        displayCart();
+      });
+
+      /* Sum the items of the same name up together. */
+      $("#show-cart").on("change", ".item-count", function (event) {
+        let name = $(this).attr("data-name");
+        let count = Number($(this).val());
+        shoppingCart.setCountForItem(name, count);
+        displayCart();
+      });
+      displayCart();
+
+      /*NOTE: I've added some strategy to the promo code, it can only be found once the user 
+      interacts with the cartoon image cart. If hovered over image, a title will appear with tip
+      on how to enter promo quiz. When the user double clicks on the cartoon cart, a prompt message
+      will appear. If answer("Cartoon Network") is entered correct, only then promo code will be given. */
+
+      /* Promotional code application. If enterted correct, discount will apply, else it won't. */
+      let promoCode = "givemeR25off";
+      let promoValue = 25;
+      let totalBill = shoppingCart.totalCart();
+      let promoDiscount = totalBill - promoValue;
+      // Input button can only be clicked once.
+      $(".promo-submit").one("click", function () {
+        promoCode = $(".promoCode").val();
+        if (promoCode === "givemeR25off") {
+          alert("Valid promo code, you receive R25 off your bill, your new total = R" + promoDiscount);
+          return $("#total-cart").html(promoDiscount);
+
+        } else if ((promoCode != "givemeR25off") || (promoCode == null)) {
+          alert("Invalid promo code or code already used!");
+          promoPrice = 0;
+        }
+      });
+
+      /* Function to hide page links until user clicks on Home Icon(div).*/
+      $(document).ready(function () {
+
+        $(".navbarList").hide();
+      });
+
+      $(".navbar").click(function () {
+        $(".navbarList").slideToggle("slow");
+      });
+
+      /* Function that hides menu meals when clicked by sliding items away.*/
+      $(document).ready(function () {
+        $(".accordion").click(function () {
+          $(".panel").slideToggle("slow");
+        });
+      });
+
+    </script>
+</body>
+
+</html>
+<!--=====================================================THE END========================================= -->
