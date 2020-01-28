@@ -29,4 +29,4 @@
 
 
 ### Live demo of web page:
-![Live Demo](Live Demo/liveDemo.jpg)
+![Live Demo](Live Demo/liveDemo.gif)
