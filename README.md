@@ -28,5 +28,3 @@
 * To the entire web page, it's recommended to open the "landingPage.html" file with any browser of your choice but preferably Google Chrome.
 
 
-### Live demo of web page:
-![Live Demo](/Live Demo/liveDemo.gif)
