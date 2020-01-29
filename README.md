@@ -27,4 +27,4 @@
 * Code can be viewwd or edited through Sublime Text or Visual Studio Code.
 * To the entire web page, it's recommended to open the "landingPage.html" file with any browser of your choice but preferably Google Chrome.
 
-![Live Demo](./Live Demo/liveDemo.gif)
+![Live Demo](Live%20Demo/liveDemo.gif)
