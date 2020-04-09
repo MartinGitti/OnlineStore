@@ -1,5 +1,5 @@
 # onlineStore
-## Online store that allows users to order homemade vegetarian meals.
+## Online store that allows users to order homemade Vegetarian meals.
 ### The web pages of the online store are:
 * Responsive to all devices.
 * Attractive with CSS & jQuery animations.
