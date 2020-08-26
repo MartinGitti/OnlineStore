@@ -28,3 +28,5 @@
 * To the entire web page, it's recommended to open the "landingPage.html" file with any browser of your choice but preferably Google Chrome.
 
 ![Live Demo](Live%20Demo/liveDemo.gif)
+
+* This is my first Web Page that consists of HTML, CSS and JavaScript.
