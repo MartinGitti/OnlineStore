@@ -1,5 +1,7 @@
 # onlineStore
 ## Online store that allows users to order homemade Vegetarian meals.
+* This is my first Web Page that consists of HTML, CSS and JavaScript.
+
 ### The web pages of the online store are:
 * Responsive to all devices.
 * Attractive with CSS & jQuery animations.
@@ -29,4 +31,4 @@
 
 ![Live Demo](Live%20Demo/liveDemo.gif)
 
-* This is my first Web Page that consists of HTML, CSS and JavaScript.
+
