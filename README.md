@@ -1,6 +1,10 @@
 # onlineStore
 ## Online store that allows users to order homemade Vegetarian meals.
-* This is my first Web Page that consists of HTML, CSS and JavaScript.
+* This is my first functional Web Page that consists of HTML, CSS and JavaScript.
+* HTML used for basic structure.
+* CSS used for styling & layout of web pages.
+* JavaScript used to add functionality and logic to web pages.
+* Animation also added to web pages with use of Jquery library.
 
 ### The web pages of the online store are:
 * Responsive to all devices.
@@ -21,14 +25,20 @@
 * Generates a unique code for order upon checkout.
 
 ### Images:
-*Please note that all images are extracted from Google Images for display purposes of online store only.*
+*Please note that all images are extracted from Google Images for display purposes of the online store.*
 
 ### Installation:
-* All files can be found and downloaded above.
+* All files can be found and downloaded above with the files provided.
 * It's recommended to group all files with the same extention together into their own local files.
-* Code can be viewwd or edited through Sublime Text or Visual Studio Code.
-* To the entire web page, it's recommended to open the "landingPage.html" file with any browser of your choice but preferably Google Chrome.
+* Code can be viewed & edited through Sublime Text or Visual Studio Code or any text editor of your choice.
+* For the entire web page, it's recommended to open the "landingPage.html" in a browser like Google Chrome.
+* Please feel free to use the code above for your perusal.
 
 ![Live Demo](Live%20Demo/liveDemo.gif)
+<hr/>
+
+<span>Happy Coding :sunglasses:</span>
+
+
 
 
